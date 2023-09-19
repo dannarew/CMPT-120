@@ -5,7 +5,7 @@
 def main(): ''' 
     print("My favorite color is: ", favColor)
     favColor = ("burgundy")
-    # won't work because lines are executed top to bottom, so the variable isn't defined if placed beforehand ''' 
+    # won't work because lines are executed top to bottom, so the variable isn't defined if placed beforehand '''
 
 birthday = "01292005"
 print("My birthday is: ", birthday)

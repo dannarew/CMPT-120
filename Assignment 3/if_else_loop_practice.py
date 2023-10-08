@@ -11,6 +11,20 @@ else (the number is less than 5)
 '''
 
 def main():
-    
+
+    numList = [7, 35, 4, 18, 47, 30, 22, 11]
+
+    for x in numList:
+        print(x)
+        if x > 35:
+            print(x, "is greater than 35")
+        elif x >= 20 and x <= 35:
+            print(x, "is between 20-35")
+        elif x >= 5 and x <= 20:
+            print(x, "is between 5-20")
+        else:
+            print(x,"is less than 5")
+
+
     
 main()

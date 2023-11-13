@@ -42,30 +42,28 @@ class Student:
             print("does not qualify for the honors program.")
 
 
-    def freeLunch(self, generated_id):
-        if generated_id == self.student_id:
+    def freeLunch(self, random_id):
+        if random_id == self.student_id:
             print("Yay free lunch!")
         else:
             print("Loser!")
 
 def main():
-    # create three students
     student1 = Student("Dan", "Freshman", "Computer Science", 3.8)
     student2 = Student("Bob", "Sophomore", "Engineering", 3.2)
     student3 = Student("Joe", "Junior", "Biology", 4.0)
 
+    random_id = random.randrange(1, 1000, 1)
 
-    generated_id = random.randrange(1, 1000, 1)
-
-    student1.freeLunch(generated_id)
+    student1.freeLunch(random_id)
     student1.honors()
 
-    student2.freeLunch(generated_id)
+    student2.freeLunch(random_id)
     student2.honors()
 
-    student3.freeLunch(generated_id)
+    student3.freeLunch(random_id)
     student3.honors()
 
 
-    main()
+main()
 
